@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-5">
-    <Card title="Vector Map">
+    <!-- <Card title="Vector Map">
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-3">
         <Map />
         <Map2 />
@@ -8,13 +8,13 @@
     </Card>
     <Card title="Basic leaflet map">
       <Map3 />
-    </Card>
-    <Card title="leaflet Marker, Circle & Polygon Map">
+    </Card> -->
+    <Card title="Game Park Map">
       <markerMap />
     </Card>
-    <Card title="leaflet GeoJSON Map">
+    <!-- <Card title="leaflet GeoJSON Map">
       <Map4 />
-    </Card>
+    </Card> -->
   </div>
 </template>
 <script setup>

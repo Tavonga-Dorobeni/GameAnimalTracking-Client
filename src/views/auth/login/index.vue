@@ -5,9 +5,8 @@
         <div class="max-w-[520px] pt-20 pl-20">
           <router-link to="/">
             <img
-              src="@/assets/images/logo/logo.svg"
+              src="@/assets/images/logo/gats.png"
               alt=""
-              class="mb-10"
               v-if="!this.$store.state.isDark"
             />
             <img
@@ -18,18 +17,17 @@
             />
           </router-link>
 
-          <h4>
-            Unlock your Project
+          <h6>
             <span class="text-slate-800 dark:text-slate-400 font-bold"
-              >performance</span
+              >Game Animal Tracking System</span
             >
-          </h4>
+          </h6>
         </div>
         <div
-          class="absolute left-0 2xl:bottom-[-160px] bottom-[-130px] h-full w-full z-[-1]"
+          class="absolute left-0 2xl:bottom-[-100px] bottom-[-70px] h-full w-full z-[-1]"
         >
           <img
-            src="@/assets/images/auth/ils1.svg"
+            src="@/assets/images/auth/gats.gif"
             alt=""
             class="h-full w-full object-contain"
           />

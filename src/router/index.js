@@ -92,10 +92,18 @@ const routes = [
           hide: true,
         },
       },
+      // {
+      //   path: "home",
+      //   name: "home",
+      //   component: () => import("@/views/home/index.vue"),
+      //   meta: {
+      //     hide: true,
+      //   },
+      // },
       {
         path: "home",
         name: "home",
-        component: () => import("@/views/home/index.vue"),
+        component: () => import("@/views/home/ecommerce.vue"),
         meta: {
           hide: true,
         },

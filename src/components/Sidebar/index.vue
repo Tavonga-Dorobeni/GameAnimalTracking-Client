@@ -23,7 +23,7 @@
           v-if="!this.$store.state.sidebarCollasp"
         >
           <img
-            src="@/assets/images/logo/logo.svg"
+            src="@/assets/images/logo/gats.png"
             alt=""
             v-if="!this.$store.state.isDark && !this.$store.state.semidark"
           />
@@ -78,22 +78,15 @@
             v-if="!this.$store.state.sidebarCollasp"
           >
             <img
-              src="@/assets/images/svg/rabit.svg"
+              src="@/assets/images/svg/giraffe.gif"
               alt=""
               class="mx-auto relative -mt-[73px]"
             />
-            <div class="max-w-[160px] mx-auto mt-6">
-              <div class="widget-title">Unlimited Access</div>
+            <div class="max-w-[160px] mx-auto mt-1">
+              <div class="widget-title">Track With Ease</div>
               <div class="text-xs font-light">
-                Upgrade your system to business plan
+                Hop on the bandwagon
               </div>
-            </div>
-            <div class="mt-6">
-              <button
-                class="btn bg-white hover:bg-opacity-80 text-slate-900 btn-sm w-full block"
-              >
-                Upgrade
-              </button>
             </div>
           </div>
         </Transition>

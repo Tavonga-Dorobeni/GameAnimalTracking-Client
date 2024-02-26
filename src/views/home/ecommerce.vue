@@ -12,10 +12,10 @@
         >
           <div>
             <h4 class="text-xl font-medium text-white mb-2">
-              <span class="block font-normal">Good evening,</span>
-              <span class="block">Mr. Dianne Russell</span>
+              <span class="block font-normal">Good day,</span>
+              <span class="block">Mr. Tavonga Dorobeni</span>
             </h4>
-            <p class="text-sm text-white font-normal">Welcome to Dashcode</p>
+            <p class="text-sm text-white font-normal">Welcome to GATS</p>
           </div>
         </div>
       </div>
@@ -61,170 +61,6 @@
     </div>
     <div class="grid grid-cols-12 gap-5">
       <div class="2xl:col-span-8 lg:col-span-7 col-span-12">
-        <Card>
-          <div class="legend-ring">
-            <apexchart
-              type="bar"
-              height="420"
-              :options="
-                this.$store.state.isDark
-                  ? columnCharthomeDark.chartOptions
-                  : columnCharthome.chartOptions
-              "
-              :series="columnCharthome.series"
-            />
-          </div>
-        </Card>
-      </div>
-      <div class="2xl:col-span-4 lg:col-span-5 col-span-12">
-        <Card title="Statistic">
-          <template #header>
-            <DropEvent />
-          </template>
-          <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
-            <div class="bg-slate-50 dark:bg-slate-900 rounded pt-3 px-4">
-              <div class="text-sm text-slate-600 dark:text-slate-300 mb-[6px]">
-                Orders
-              </div>
-              <div
-                class="text-lg text-slate-900 dark:text-white font-medium mb-[6px]"
-              >
-                123k
-              </div>
-              <div
-                class="font-normal text-xs text-slate-600 dark:text-slate-300"
-              >
-                <span class="text-warning-500">-60%</span>
-                From last Week
-              </div>
-              <div class="mt-4">
-                <apexchart
-                  type="bar"
-                  height="44"
-                  :options="columnCharthome2.chartOptions"
-                  :series="columnCharthome2.series"
-                />
-              </div>
-            </div>
-            <div class="bg-slate-50 dark:bg-slate-900 rounded pt-3 px-4">
-              <div class="text-sm text-slate-600 dark:text-slate-300 mb-[6px]">
-                Profit
-              </div>
-              <div
-                class="text-lg text-slate-900 dark:text-white font-medium mb-[6px]"
-              >
-                654k
-              </div>
-              <div
-                class="font-normal text-xs text-slate-600 dark:text-slate-300"
-              >
-                <span class="text-primary-500">+02%</span>
-                From last Week
-              </div>
-              <div class="mt-4">
-                <apexchart
-                  type="line"
-                  height="44"
-                  :options="
-                    this.$store.state.isDark
-                      ? areaLineDark.chartOptions
-                      : areaLine.chartOptions
-                  "
-                  :series="areaLine.series"
-                />
-              </div>
-            </div>
-            <div
-              class="md:col-span-2 bg-slate-50 dark:bg-slate-900 rounded py-3 px-4"
-            >
-              <div class="flex items-center">
-                <div class="flex-none">
-                  <div
-                    class="text-sm text-slate-600 dark:text-slate-300 mb-[6px]"
-                  >
-                    Earnings
-                  </div>
-                  <div
-                    class="text-lg text-slate-900 dark:text-white font-medium mb-[6px]"
-                  >
-                    $12,335.00
-                  </div>
-                  <div
-                    class="font-normal text-xs text-slate-600 dark:text-slate-300"
-                  >
-                    <span class="text-primary-500">+08%</span>
-                    From last Week
-                  </div>
-                </div>
-                <div class="flex-1">
-                  <div class="legend-ring2">
-                    <apexchart
-                      type="donut"
-                      height="200"
-                      :options="
-                        this.$store.state.isDark
-                          ? donutChartDark.chartOptions
-                          : donutChart.chartOptions
-                      "
-                      :series="donutChart.series"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-      <div class="xl:col-span-6 col-span-12">
-        <Card title="Best Customers">
-          <template #header>
-            <DropEvent />
-          </template>
-          <Customer
-        /></Card>
-      </div>
-      <div class="xl:col-span-6 col-span-12">
-        <Card title="Recent Orders" noborder>
-          <template #header>
-            <SelectMonth />
-          </template>
-          <Etable class="-mx-6 -mb-6" />
-        </Card>
-      </div>
-      <div class="xl:col-span-8 lg:col-span-7 col-span-12">
-        <Card title="Visitors Report">
-          <template #header>
-            <DropEvent />
-          </template>
-          <apexchart
-            type="area"
-            height="350"
-            :options="
-              this.$store.state.isDark
-                ? basicAreaDark.chartOptions
-                : basicArea.chartOptions
-            "
-            :series="basicArea.series"
-          />
-        </Card>
-      </div>
-      <div class="xl:col-span-4 lg:col-span-5 col-span-12">
-        <Card title="Visitors By Gender">
-          <template #header>
-            <DropEvent />
-          </template>
-          <apexchart
-            type="radar"
-            height="350"
-            :options="
-              this.$store.state.isDark
-                ? radarChartDark.chartOptions
-                : radarChart.chartOptions
-            "
-            :series="radarChart.series"
-        /></Card>
-      </div>
-      <div class="xl:col-span-6 col-span-12">
         <Card title="Most sales">
           <template #header>
             <div
@@ -275,13 +111,21 @@
           </ul>
         </Card>
       </div>
-      <div class="xl:col-span-6 col-span-12">
-        <Card title="Best selling products">
+      <div class="2xl:col-span-4 lg:col-span-5 col-span-12">
+        <Card title="Visitors By Gender">
           <template #header>
             <DropEvent />
           </template>
-          <Products />
-        </Card>
+          <apexchart
+            type="radar"
+            height="350"
+            :options="
+              this.$store.state.isDark
+                ? radarChartDark.chartOptions
+                : radarChart.chartOptions
+            "
+            :series="radarChart.series"
+        /></Card>
       </div>
     </div>
   </div>
