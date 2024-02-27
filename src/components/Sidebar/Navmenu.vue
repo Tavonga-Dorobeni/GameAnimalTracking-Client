@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="pb-20">
     <li
       v-for="(item, i) in items"
       :key="i"

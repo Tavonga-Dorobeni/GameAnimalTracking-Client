@@ -45,7 +45,7 @@ export default {
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       zoom: 16,
       center: [-17.83868526679876, 31.007369057051193],
-      markerLatLng: [-17.838993407602533, 31.007291586603657],
+      markerLatLng: [-17.839515, 31.007354],
       circle: {
         center: [47.31322, -1.319482],
         radius: 4500,

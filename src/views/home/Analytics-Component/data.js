@@ -2302,27 +2302,27 @@ export const mostSales = [
 
 export const mostSales2 = [
   {
-    title: "Nevada",
+    title: "Gweru",
     amount: "(80%)",
     cls: "bg-primary-500 ring-primary-500",
   },
   {
-    title: "Ohio",
+    title: "Hwange",
     amount: "(75%)",
     cls: "bg-success-500 ring-success-500",
   },
   {
-    title: "Montana",
+    title: "Victoria Falls",
     amount: "(65%)",
     cls: "bg-info-500 ring-info-500",
   },
   {
-    title: "Iowa",
+    title: "Bulawayo",
     amount: "(85%)",
     cls: "bg-warning-500 ring-warning-500",
   },
   {
-    title: "Arkansas",
+    title: "Harare",
     amount: "(90%)",
     cls: "bg-success-500 ring-success-500",
   },

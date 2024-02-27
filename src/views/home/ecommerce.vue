@@ -1,7 +1,7 @@
 <template>
   <div>
     <Breadcrumb />
-    <div class="grid grid-cols-12 gap-5 mb-5">
+    <!-- <div class="grid grid-cols-12 gap-5 mb-5">
       <div class="2xl:col-span-3 lg:col-span-4 col-span-12">
         <div
           class="bg-no-repeat bg-cover bg-center p-5 rounded-[6px] relative"
@@ -58,10 +58,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="grid grid-cols-12 gap-5">
       <div class="2xl:col-span-8 lg:col-span-7 col-span-12">
-        <Card title="Most sales">
+        <Card title="Game Parks">
           <template #header>
             <div
               class="border border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded p-1 flex items-center"
@@ -74,7 +74,7 @@
                     : 'dark:text-slate-300'
                 "
                 @click="fillterMap = 'global'"
-                >Global</span
+                >National</span
               >
               <span
                 class="flex-1 text-sm font-normal px-3 py-1 rounded transition-all duration-150 cursor-pointer"
@@ -84,7 +84,7 @@
                     : 'dark:text-slate-300'
                 "
                 @click="fillterMap = 'usa'"
-                >USA</span
+                >Regional</span
               >
             </div>
           </template>
@@ -112,7 +112,7 @@
         </Card>
       </div>
       <div class="2xl:col-span-4 lg:col-span-5 col-span-12">
-        <Card title="Visitors By Gender">
+        <Card title="Animal Distribution By Gender">
           <template #header>
             <DropEvent />
           </template>

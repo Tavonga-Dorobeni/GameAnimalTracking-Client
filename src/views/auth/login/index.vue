@@ -57,7 +57,7 @@
             <div class="text-center 2xl:mb-10 mb-4">
               <h4 class="font-medium">Sign in</h4>
               <div class="text-slate-500 text-base">
-                Sign in to your account to start using Dashcode
+                Sign in to your account to start using GATS
               </div>
             </div>
             <Signin />
@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="auth-footer text-center">
-            Copyright 2021, Dashcode All Rights Reserved.
+            Copyright 2021, GATS All Rights Reserved.
           </div>
         </div>
       </div>
