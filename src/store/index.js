@@ -6,6 +6,8 @@ import project from "./app/project";
 import apptodo from "./app/todo";
 import auth from "./app/auth";
 import user from "./app/user";
+import animal from "./app/animal";
+import animal_location from "./app/animal_location";
 
 export default createStore({
   state: {
@@ -86,5 +88,7 @@ export default createStore({
     chat,
     auth,
     user,
+    animal,
+    animal_location
   },
 });

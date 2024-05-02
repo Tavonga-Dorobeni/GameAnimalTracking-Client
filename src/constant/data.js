@@ -27,6 +27,27 @@ export const menuItems = [
     link: "users",
     roles:["ROLE_APPLICANT", "ROLE_RECRUITER"],
   },
+
+  {
+    title: "Animals",
+    icon: "heroicons-outline:sparkles",
+    link: "animals",
+    roles:["ROLE_APPLICANT", "ROLE_RECRUITER"],
+  },
+
+  {
+    title: "Augmented Reality",
+    icon: "heroicons-outline:qr-code",
+    link: "ar",
+    roles:["ROLE_APPLICANT", "ROLE_RECRUITER"],
+  },
+
+  {
+    title: "Home Ranges",
+    icon: "heroicons-outline:rectangle-group",
+    link: "homerange",
+    roles:["ROLE_APPLICANT", "ROLE_RECRUITER"],
+  },
   
   // {
   //   title: "Chat",

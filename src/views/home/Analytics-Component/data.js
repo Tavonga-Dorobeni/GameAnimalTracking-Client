@@ -1370,19 +1370,15 @@ export const basicArea2Dark = {
 export const radarChart = {
   series: [
     {
-      name: "Male",
-      data: [41, 64, 81, 60, 42, 42, 33, 23],
-    },
-    {
-      name: "Female",
-      data: [65, 46, 42, 25, 58, 63, 76, 43],
-    },
+      name: "Count",
+      data: [1, 0, 0, 0, 0, 0],
+    }
   ],
   chartOptions: {
     chart: {
-      toolbar: {
-        show: false,
-      },
+      // toolbar: {
+      //   show: false,
+      // },
       dropShadow: {
         enabled: false,
         blur: 8,
@@ -1391,42 +1387,40 @@ export const radarChart = {
         opacity: 0.2,
       },
     },
-    legend: {
-      show: true,
-      fontSize: "14px",
-      fontFamily: "Inter",
-      labels: {
-        colors: "#475569",
-      },
-    },
-    yaxis: {
-      show: true,
-    },
-    colors: [colors.warning, colors.primary],
+    // legend: {
+    //   show: true,
+    //   fontSize: "14px",
+    //   fontFamily: "Inter",
+    //   labels: {
+    //     colors: "#475569",
+    //   },
+    // },
+    // yaxis: {
+    //   show: true,
+    // },
+    // colors: [colors.warning, colors.primary],
     xaxis: {
       categories: [
-        "2019",
-        "2020",
-        "2021",
-        "2017",
-        "2018",
-        "2015",
-        "2014",
-        "2013",
+        "Section A",
+        "Section B",
+        "Section C",
+        "Section D",
+        "Section E",
+        "Section F"
       ],
     },
-    fill: {
-      opacity: [0.2, 0.2],
-    },
-    stroke: {
-      width: 2,
-    },
-    markers: {
-      size: 0,
-    },
-    grid: {
-      show: false,
-    },
+    // fill: {
+    //   opacity: [0.2, 0.2],
+    // },
+    // stroke: {
+    //   width: 2,
+    // },
+    // markers: {
+    //   size: 0,
+    // },
+    // grid: {
+    //   show: false,
+    // },
   },
 };
 
@@ -1434,11 +1428,11 @@ export const radarChartDark = {
   series: [
     {
       name: "Male",
-      data: [41, 64, 81, 60, 42, 42, 33, 23],
+      data: [1, 0, 0, 0, 0, 0],
     },
     {
       name: "Female",
-      data: [65, 46, 42, 25, 58, 63, 76, 43],
+      data: [0, 0, 0, 0, 0, 0],
     },
   ],
   chartOptions: {
@@ -1468,14 +1462,12 @@ export const radarChartDark = {
     colors: [colors.warning, colors.primary],
     xaxis: {
       categories: [
-        "2019",
-        "2020",
-        "2021",
-        "2017",
-        "2018",
-        "2015",
-        "2014",
-        "2013",
+        "Section A",
+        "Section B",
+        "Section C",
+        "Section D",
+        "Section E",
+        "Section F"
       ],
       labels: {
         style: {
@@ -2302,28 +2294,33 @@ export const mostSales = [
 
 export const mostSales2 = [
   {
-    title: "Gweru",
+    title: "Section A",
     amount: "(80%)",
     cls: "bg-primary-500 ring-primary-500",
   },
   {
-    title: "Hwange",
+    title: "Section B",
     amount: "(75%)",
     cls: "bg-success-500 ring-success-500",
   },
   {
-    title: "Victoria Falls",
+    title: "Section C",
     amount: "(65%)",
-    cls: "bg-info-500 ring-info-500",
-  },
-  {
-    title: "Bulawayo",
-    amount: "(85%)",
     cls: "bg-warning-500 ring-warning-500",
   },
   {
-    title: "Harare",
+    title: "Section D",
+    amount: "(85%)",
+    cls: "bg-info-500 ring-info-500",
+  },
+  {
+    title: "Section E",
     amount: "(90%)",
-    cls: "bg-success-500 ring-success-500",
+    cls: "bg-primary-500 ring-primary-500",
+  },
+  {
+    title: "Section F",
+    amount: "(90%)",
+    cls: "bg-secondary-500 ring-secondary-500",
   },
 ];

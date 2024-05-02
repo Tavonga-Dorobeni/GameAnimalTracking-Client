@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
     <!-- <div class="grid grid-cols-12 gap-5 mb-5">
       <div class="2xl:col-span-3 lg:col-span-4 col-span-12">
         <div
@@ -61,34 +61,7 @@
     </div> -->
     <div class="grid grid-cols-12 gap-5">
       <div class="2xl:col-span-8 lg:col-span-7 col-span-12">
-        <Card title="Game Parks">
-          <template #header>
-            <div
-              class="border border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded p-1 flex items-center"
-            >
-              <span
-                class="flex-1 text-sm font-normal px-3 py-1 transition-all duration-150 rounded cursor-pointer"
-                :class="
-                  fillterMap === 'global'
-                    ? 'bg-slate-900 text-white dark:bg-slate-700 dark:text-slate-300'
-                    : 'dark:text-slate-300'
-                "
-                @click="fillterMap = 'global'"
-                >National</span
-              >
-              <span
-                class="flex-1 text-sm font-normal px-3 py-1 rounded transition-all duration-150 cursor-pointer"
-                :class="
-                  fillterMap === 'usa'
-                    ? 'bg-slate-900 text-white dark:bg-slate-700 dark:text-slate-300'
-                    : 'dark:text-slate-300'
-                "
-                @click="fillterMap = 'usa'"
-                >Regional</span
-              >
-            </div>
-          </template>
-
+        <Card title="Game Park Geofences">
           <Map />
 
           <ul
@@ -106,25 +79,24 @@
                 ></span>
                 <span>{{ item.title }}</span></span
               >
-              <span class="block mt-1">{{ item.amount }}</span>
             </li>
           </ul>
         </Card>
       </div>
       <div class="2xl:col-span-4 lg:col-span-5 col-span-12">
-        <Card title="Animal Distribution By Gender">
+        <Card title="Animal Distribution">
           <template #header>
             <DropEvent />
           </template>
           <apexchart
-            type="radar"
+            type="bar"
             height="350"
             :options="
               this.$store.state.isDark
                 ? radarChartDark.chartOptions
                 : radarChart.chartOptions
             "
-            :series="radarChart.series"
+            :series="series[6]"
         /></Card>
       </div>
     </div>
@@ -153,7 +125,7 @@ import {
 } from "./Analytics-Component/data";
 import DropEvent from "./Analytics-Component/DropEvent";
 import Etable from "./Analytics-Component/Etable";
-import Map from "./Analytics-Component/Map2";
+import Map from "../map/Maps/Marker-map.vue";
 import Products from "./Analytics-Component/Products";
 import SelectMonth from "./Analytics-Component/SelectMonth";
 import Breadcrumb from "./Analytics-Component/Breadcrumbs";
@@ -171,6 +143,51 @@ export default {
   },
   data() {
     return {
+      count: 0,
+      series: [
+        [
+          {
+            name: "Count",
+            data: [0, 0, 0, 0, 0, 1],
+          }
+        ],
+        [
+          {
+            name: "Count",
+            data: [0, 0, 0, 0, 0, 1],
+          }
+        ],
+        [
+          {
+            name: "Count",
+            data: [0, 0, 0, 0, 0, 1],
+          }
+        ],
+        [
+          {
+            name: "Count",
+            data: [0, 0, 0, 0, 1, 0],
+          }
+        ],
+        [
+          {
+            name: "Count",
+            data: [0, 0, 0, 1, 0, 0],
+          }
+        ],
+        [
+          {
+            name: "Count",
+            data: [0, 0, 0, 1, 0, 0],
+          }
+        ],
+        [
+          {
+            name: "Count",
+            data: [1, 0, 0, 0, 0, 0],
+          }
+        ],
+      ],
       mostSales2,
       columnCharthome,
       columnCharthomeDark,
@@ -238,6 +255,12 @@ export default {
       ],
     };
   },
+
+  mounted(){
+    this.$emitter.on('CronJob', () => {
+      this.count++
+    })
+  }
 };
 </script>
 <style></style>

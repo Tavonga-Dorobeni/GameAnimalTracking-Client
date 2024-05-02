@@ -599,6 +599,32 @@ const routes = [
           hide: true,
         },
       },
+      {
+        path: "animals",
+        name: "animals",
+        component: () => import("@/views/app/animals"),
+        meta: {
+          hide: true,
+        },
+      },
+      {
+        path: "ar",
+        name: "ar",
+        beforeEnter(to, from, next) {
+          window.location.replace("https://gats-ar.netlify.app/")
+        },
+        meta: {
+          hide: true,
+        },
+      },
+      {
+        path: "homerange",
+        name: "homerange",
+        component: () => import("@/views/homerange"),
+        meta: {
+          hide: true,
+        },
+      },
     ],
   },
   {
